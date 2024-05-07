@@ -13,16 +13,15 @@ return new class extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->id();
-            $table->string('bodyPart');
+            $table->string('body_part');
             $table->string('equipment');
-            $table->string('gifUrl');
+            $table->string('gif_url');
             $table->string('name');
             $table->string('target');
-            $table->json('secondaryMuscles');  // Almacenando como JSON
-            $table->json('instructions');      // Almacenando como JSON
+            $table->json('secondary_muscles');
+            $table->json('instructions');
             $table->timestamps();
         });
-        
         
     }
 

@@ -15,12 +15,12 @@ class ExerciseSeeder extends Seeder
 
         foreach ($exercises as $exercise) {
             Exercise::create([
-                'bodyPart' => $exercise->bodyPart,
+                'body_part' => $exercise->bodyPart,
                 'equipment' => $exercise->equipment,
-                'gifUrl' => $exercise->gifUrl,
+                'gif_url' => $exercise->gifUrl,
                 'name' => $exercise->name,
                 'target' => $exercise->target,
-                'secondaryMuscles' => json_encode($exercise->secondaryMuscles),
+                'secondary_muscles' => json_encode($exercise->secondaryMuscles),
                 'instructions' => json_encode($exercise->instructions)
             ]);
         }
